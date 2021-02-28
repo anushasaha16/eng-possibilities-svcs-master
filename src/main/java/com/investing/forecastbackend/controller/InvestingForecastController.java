@@ -25,8 +25,7 @@ public class InvestingForecastController {
 
     private InvestingForecastService service;
     private ObjectMapper objectMapper;
-    private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(InvestingForecastController.class);
-    
+
     @GetMapping
     public ResponseEntity<List<InvestmentDetail>> getInvestmentOptions() {
         log.info("Received request to retrieve investment options");
